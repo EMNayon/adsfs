@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../images/birthday.jpg);
+    background-size: cover;
+}
+.main {
+    width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #fdf;
+}
+.balloon {
+    width: 50px;
+}
+.main-text {
+    width: 300px;
+    margin: 20px auto 0;
+    color: #777;
+}
+.main-text h2 {
+    margin-bottom: 20px;
+}
+.footer-menu {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    padding: 17px 5px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+}
+/* .footer-menu img {
+    width: 20px;
+    margin: 0 32px;
+    cursor: pointer;
+} */
+.swiper-container{
+    height: 350px;
+}
+.swiper-wrapper{
+    align-items: center;
+}
+.swiper-slide{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+    left: 80px;
+}
+.kobita{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+    left: 80px;
+    background: #777;
+    text-align: center;
+}
+.kobita p {
+    margin-top: 55px;
+}
+.swiper-slide img{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+}
+/* .swiper-slide p {
+    box-shadow: 10px ;
+    background: #777;
+    margin-top: 55px;
+    text-align: center;
+} */
+.swiper-slide-active {
+    transform: scale(1.2);
+    transition: .4s;
+}
+.balloon1 {
+    width: 50px;
+    opacity: 0.4;
+}
+.balloon2 {
+    width: 100px;
+    opacity: 0.4;
+}
+.balloon3 {
+    width: 50px;
+    opacity: 0.4;
+}
+.balloonAnimation {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    display: flex;
+    bottom: -450px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: balloonAnimation 5s linear infinite;
+}
+@keyframes balloonAnimation{
+    0%{
+        bottom: -450px;
+    }
+    20%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 400px;
+    }
+    80%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+.ballonA {
+    padding: 20px;
+}
+.happy-birthday {
+    width: 100px;
+    opacity: 0.6;
+}
+
+.info {
+    width: 100%;
+    padding: 8px 0;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    border-radius: 0 0 5px;
+}
+.info p{
+    font-size: 10px;
+    margin-left: 7px;
+    color: #fff;
+}
+
+@media screen and (max-width:480px) {
+    .main{
+        width: 350px;
+        height: 100vh;
+    }
+    .balloon {
+        width: 50px;
+    }
+}
