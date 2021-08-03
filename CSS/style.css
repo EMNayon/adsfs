@@ -157,4 +157,8 @@ body{
         border-radius: 7px;
         left: 80px;
     }
+    .swiper-slide-active {
+        transform: scale(1.2);
+        transition: .4s;
+    }
 }
