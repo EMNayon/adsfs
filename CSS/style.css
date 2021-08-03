@@ -51,6 +51,10 @@ body{
     border-radius: 7px;
     left: 80px;
 }
+.swiper-slide audio {
+    margin-top: 100px;
+    width: 200px;
+}
 .kobita{
     width: 200px;
     height: 250px;
@@ -146,5 +150,11 @@ body{
     }
     .balloon {
         width: 50px;
+    }
+    .swiper-slide{
+        width: 200px;
+        height: 250px;
+        border-radius: 7px;
+        left: 80px;
     }
 }
